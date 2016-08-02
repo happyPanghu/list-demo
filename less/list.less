@@ -1,0 +1,116 @@
+/*
+ * 列表less
+ */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+} 
+
+.clear {
+	clear: both;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+img {
+	vertical-align: middle;
+}
+
+input , textarea , button {
+	outline: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input:disabled {
+	background-color: white;
+}
+
+textarea {
+	resize: none;
+}
+
+ul , ol , li {
+	list-style: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+	text-decoration: none;
+}
+
+a , img {
+	-webkit-touch-callout: none;
+}
+
+body {
+	background-color: #f0f0f0;
+	font-family: Helvetica;
+	width: 7.5rem;
+	@media screen and (max-width: 321px) {
+		font-size: 16px;
+	}
+
+	@media screen and (max-width: 400px) and (min-width: 321px) {
+		font-size: 17px;
+	}
+
+	@media screen and (min-width: 400px) {
+		font-size: 19px;
+	}
+}
+
+body.white {
+	background-color: white;
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+body{
+}
+.opacity{
+	display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    opacity: .5;
+}
+.nav{
+	height:.88rem;
+	line-height:.88rem;
+    background: white;
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+}
+.sel{
+    width: 49.6%;
+    height: .88rem;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #f0f0f0;
+}
+.sel:last-child{
+	border-right:0;
+}
+.options{
+    display: none;
+    position: absolute; 
+    max-height: 6rem;
+    width: 100%;
+    background: white;
+    overflow: auto;
+    li{
+	    height: .7rem;
+	    line-height: .7rem;
+	    border-bottom: 1px solid #eaeaea;
+    }
+}
+
+.list{
+    overflow: scroll;
+}
