@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 适配手机  一个普通的带有筛选项的列表-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>列表</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+<link rel="stylesheet" href="../css/list.css" />
+<script type="text/javascript"></script>
+<script type="text/javascript">
+var deviceWidth = document.documentElement.clientWidth;
+if(deviceWidth > 750){
+	deviceWidth = 750;
+}
+document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+</script>
+<style type="text/css">
+	.test{
+	    padding: 10px;
+	    }
+	.test2{
+		color:black;
+	    display: block;
+	    font-size: 18px;
+	    text-align: center;
+	    line-height: 2.3;
+	    border-radius: 5px;
+	    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	    background-color: #ffdc00;
+	}
+	.test2:active{
+	    color:black;
+    	background-color: #ffcc00;
+		}
+		
+	ul{
+		list-style-type:none;
+	}
+	li{
+	    line-height: 24px;
+	}
+	.icon{
+	    background: url(../css/sprite.png) no-repeat;
+	    display: block;
+	    background-size: 235px 580px;
+	    position: absolute;
+	    width: 20px;
+	    height: 20px;
+	    margin-top: 2px;
+	    margin-left: 5px;
+	}
+	.d1{
+	    background-position: -3px -279px;
+	}
+	.d2{
+	    background-position: -2px -228px;
+	}
+	.d3{
+	    background-position: -2px -253px;
+	}
+	.word{
+		font-size:16px;
+	    margin-left: 30px;
+	}
+	.word2{
+	    margin-left: 30px;
+    	font-size: 15px;
+   	    line-height: 20px;
+    	display: inherit;
+	}
+	.icon2{
+	    background: url(../css/sprite.png) no-repeat;
+	    display: block;
+	    background-size: 235px 580px;
+	    position: absolute;
+	    width: 20px;
+	    height: 20px;
+	    margin-left: -25px;
+	    background-position: -2px -253px;
+	}
+</style>
+</head>
+<body class="page-list">
+	<div class="test">
+	<a class="test2">点击查看</a>
+	</div>
+	<!-- demo span-span结构显示图标 -->
+	<div>
+		<ul>
+			<li>
+				<span class="icon d1"></span>
+				<span class="word">test</span>
+			</li>
+			<li>
+				<span  class="icon d2"></span>
+				<span class="word">hello</span>
+			</li>
+			<li>
+				<span  class="icon d3"></span>
+				<span class="word">你好！</span>
+			</li>
+		</ul>
+	</div>
+	<!-- demo span-em模式 -->
+	<div>
+		<span class="word2">
+			<em class="icon2"></em>
+			这是一个测试
+		</span>
+	</div>
+	
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</body>
+</html>

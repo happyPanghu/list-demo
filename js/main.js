@@ -12,5 +12,15 @@ var listHandler={
 			$(".options, .opacity").on("click",function(){
 				$(".opacity, .options").hide();
 			})
-		}
+			$("#test1").on("click",function(){
+				listHandler.regular("sfdsdf");
+			})
+		},
+		regular:function(txt,time){
+			$("#warnning").text(txt);
+			$("#wrapper").fadeIn(200);
+			setTimeout(function(){
+			    $("#wrapper").fadeOut(300);
+			},time==undefined?500:time);
+		},
 }
